@@ -1,5 +1,9 @@
 # Style Guide
 
+These are shipped defaults. Explicit user choices and a selected profile take
+precedence over font names, palette values, and decorative examples below.
+Use task-specific tokens in the artifact; persist profile changes only when requested.
+
 **The single source of truth for colors, typography, and tokens.** Every diagram draws from this — not from hex values inlined in other reference files. If you want to change the visual skin of Diagram Design, change this file.
 
 Default skin is a cool editorial palette — white-smoke paper, jet-black ink, atomic-tangerine accent, blue-slate muted. It's designed to look good out of the box; swap these values (or run [`onboarding.md`](onboarding.md)) and every new diagram inherits the new skin without touching any type-specific logic.
@@ -142,7 +146,7 @@ Simplified Chinese takes the same three rules with the Simplified stack (`'Noto 
 | `radius-sm` | `4` | Small tags |
 | `radius-md` | `6` | Node boxes |
 | `radius-lg` | `8` | Containers, rings |
-| `grid` | `4` | Every coord, size, and gap is divisible by 4 (hard rule) |
+| `grid` | `4` | Base grid for major layout geometry; typography, radii, optical, curve, and attachment geometry may differ |
 
 ---
 
